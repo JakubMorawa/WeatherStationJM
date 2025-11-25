@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Station J.M.</title>
+    
+    <!-- CSS -->
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', filename='sunandcloud.svg') }}">
+    
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <header>
+                <img class="sun-and-cloud" src="{{ url_for('static', filename='sunandcloud.svg') }}" alt="Sun and Cloud">
+                <img class="title" src="{{ url_for('static', filename='weatherstationjm.svg') }}" alt="Weather Station J.M." width="50%">
+            </header>
+        </div>
+
+        <div class="textContainer">
+            <div class="textSection">
+
+                <!-- Temperature -->
+                <div class="detailBox temp">
+                    <span id="temp"></span>
+                </div>
+
+                <!-- Weather Icon -->
+                <div class="iconContainer"> 
+                    <img id="icon" class="weatherIcon" alt="Weather Icon">
+                </div>
+
+                <!-- Description -->
+                <div class="detailBox desc">
+                    <span id="desc"></span>
+                </div>
+
+                <!-- Rain -->
+                <div class="detailBox rain">
+                    <strong>Rain Chance:</strong><br>
+                    <span id="rain"></span>
+                </div>
+
+                <!-- Feels Like -->
+                <div class="detailBox feelLike">
+                    <strong>Feels Like:</strong><br>
+                    <span id="feelsLike"></span>°F
+                </div>
+
+                <!-- Humidity -->
+                <div class="detailBox humidity">
+                    <strong>Humidity:</strong><br>
+                    <span id="humidity"></span>%
+                </div>
+
+                <!-- Wind Speed -->
+                <div class="detailBox windSpeed">
+                    <strong>Wind Speed:</strong><br>
+                    <span id="windSpeed"></span> mph
+                </div>
+
+                <!-- Time -->
+                <div class="detailBox time">
+                    <strong>Time:</strong><br>
+                    <span id="forecastTime"></span>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="map">
+                <div id="map"></div>
+                <p id="location"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
