@@ -30,10 +30,9 @@ body {
     margin-bottom: 20px;
 }
 
-.top header{
+.top header {
     padding-top: 10px;
 }
-
 
 .sun-and-cloud, .title {
     transition: transform 0.3s ease;
@@ -70,12 +69,12 @@ body {
     padding-bottom: 10px;
 }
 
-.temp{
+.temp {
     font-size: 5rem !important;
     font-weight: 200 !important;
 }
 
-.detailBox{
+.detailBox {
     width: 80%;
     background-color: rgb(190, 187, 208);
     font-size: 2rem;
@@ -84,22 +83,22 @@ body {
     margin-top: 10px;
     text-align: center;
     border-radius: 8px;
-    border: black solid 3px ;
+    border: black solid 3px;
 }
 
-.iconContainer{
+.iconContainer {
     margin-top: 10px;
     background-color: rgb(190, 187, 208);
     width: 90px;
-    height:90px;
+    height: 90px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
-    border: black solid 3px ;
+    border: black solid 3px;
     display: flex;
 }
 
-.map{
+.map {
     margin-left: 10px;
     margin-right: 10px;
     background-color: black;
@@ -108,7 +107,91 @@ body {
     border: rgb(0, 11, 80) solid 10px;
 }
 
-#map{
+#map {
     width: 100%;
     height: 1000px;
+}
+
+/* ---------------- Responsive Styles for Phones ---------------- */
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        height: auto;
+    }
+
+    .textContainer {
+        flex-direction: column;
+        margin: 10px;
+        gap: 10px;
+    }
+
+    .textSection {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .temp {
+        font-size: 3.5rem !important;
+    }
+
+    .detailBox {
+        font-size: 1.5rem;
+        width: 90%;
+    }
+
+    .iconContainer {
+        width: 70px;
+        height: 70px;
+    }
+
+    .sun-and-cloud {
+        width: 50px;
+    }
+
+    .title {
+        width: 80%;
+    }
+
+    .map {
+        height: 500px;
+        border-width: 5px;
+    }
+
+    #map {
+        height: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .temp {
+        font-size: 2.5rem !important;
+    }
+
+    .detailBox {
+        font-size: 1.2rem;
+        width: 95%;
+    }
+
+    .iconContainer {
+        width: 60px;
+        height: 60px;
+    }
+
+    .sun-and-cloud {
+        width: 40px;
+    }
+
+    .title {
+        width: 90%;
+    }
+
+    .map {
+        height: 400px;
+        border-width: 4px;
+    }
+
+    #map {
+        height: 400px;
+    }
 }
