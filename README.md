@@ -55,26 +55,21 @@ The backend is securely deployed on **Render**, using a `.env` file locally and 
 🎨 Clean UI with responsive layout
 
 ## 🛠️ Tech Stack
-<div>
-  <table width="100%">
-    <tr valign="top">
-      <td width="100%" align="center">
-        <h3>🧩 Backend</h3>
-        Python (Flask)
-      </td>
-      <td width="100%" align="center">
-        <h3>🎨Frontend</h3>
-        <ul style="text-align: left; display: inline-block;">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Leaflet.js</li>
-        </ul>
-      </td>
-      <td width="100%" align="center">
-        <h3>🌤️ API</h3>
-        <a href="https://openweathermap.org">OpenWeatherMap</a>
-      </td>
-    </tr>
-  </table>
-</div>
+<table style="width:100%; text-align:center; border-collapse:collapse;">
+  <tr style="background-color:#e2e8ee;">
+    <th style="padding:10px;">Backend</th>
+    <th style="padding:10px;">Frontend</th>
+    <th style="padding:10px;">API</th>
+  </tr>
+  <tr>
+    <td style="padding:10px;">Python (Flask)</td>
+    <td style="padding:10px;">
+      <ul style="list-style:none; padding:0; margin:0;">
+        HTML, CSS, JavaScript, Leaflet.js
+      </ul>
+    </td>
+    <td style="padding:10px;">
+      <a href="https://openweathermap.org">OpenWeatherMap</a>
+    </td>
+  </tr>
+</table>
